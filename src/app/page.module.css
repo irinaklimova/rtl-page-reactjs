@@ -1,0 +1,34 @@
+.section {
+    display: grid;
+    position: relative;
+    width: 100%;
+    max-width: 1128px;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+}
+
+.main {
+    padding: 32px 0;
+}
+
+@media only screen and (max-width: 1280px) {
+    .main {
+        margin: 0 16px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+}

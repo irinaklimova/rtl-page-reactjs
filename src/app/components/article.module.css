@@ -1,0 +1,39 @@
+.article {
+    position: relative;
+    font-weight: 400;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.header {
+    margin-top: 8px;
+}
+
+.label {
+    color: #020203;
+    text-transform: initial;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.picture {
+    position: relative;
+}
+
+.picture picture {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
