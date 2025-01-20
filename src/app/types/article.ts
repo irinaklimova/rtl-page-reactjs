@@ -1,6 +1,13 @@
+interface Crop {
+    height: number,
+    width: number,
+    ratio: string,
+    path: string
+}
+
 interface Image {
     afbeelding: string,
-    crops: []
+    crops: Crop[]
 }
 
 export interface Article {

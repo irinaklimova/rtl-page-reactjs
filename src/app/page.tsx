@@ -16,7 +16,6 @@ export default function Home() {
     useEffect(() => {
         const loadArticles = (e: Event) => {
             if (sectionRef.current && window.innerHeight + window.scrollY > sectionRef.current.scrollHeight && !loading) {
-                console.log('MORE');
                 setLoading(true);
                 getArticles().then(res => {
                     setArticle([...articles, ...res]);
